@@ -7,7 +7,7 @@ export default class App extends Component {
     return (
       <div>
         <h1>Hello, world.</h1>
-        <div className="box">Dont put me in a box</div>
+        <div className="box">Don't put me in a box</div>
       </div>
     );
   }
