@@ -17,6 +17,9 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     preLoaders: [
       {
@@ -27,7 +30,7 @@ module.exports = {
     ],
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         loaders: ['react-hot', 'babel-loader'],
         include: path.join(__dirname, 'src')
       },
