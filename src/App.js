@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-var css = require('./app.css');
+require('./app.css')
 
 export default class App extends Component {
-  render() {
+  render () {
     return (
       <div>
         <h1>Hello, world.</h1>
-        <div className="box">Don't put me in a box</div>
+        <div className='box'>Don't put me in a box</div>
       </div>
-    );
+    )
   }
 }

@@ -1,6 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
-var autoprefixer = require('autoprefixer');
+var path = require('path')
+var webpack = require('webpack')
+var autoprefixer = require('autoprefixer')
 
 module.exports = {
   devtool: 'eval',
@@ -18,6 +18,13 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/,
+        loader: 'standard',
+        include: path.join(__dirname, 'src')
+      }
+    ],
     loaders: [
       {
         test: /\.js$/,
@@ -31,5 +38,5 @@ module.exports = {
       }
     ]
   },
-  postcss: [ autoprefixer({ browsers: ['last 2 versions', ] }) ]
-};
+  postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ]
+}
