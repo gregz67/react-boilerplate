@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "A React Boilerplate",
   "scripts": {
-    "start": "node server.js",
+    "build": "webpack",
+    "build:watch": "webpack --progress --colors --watch",
+    "dev": "webpack-dev-server --progress --colors --hot --inline",
     "test": "jest"
   },
   "author": "",
