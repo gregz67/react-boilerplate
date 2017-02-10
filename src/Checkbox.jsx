@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 export default class Checkbox extends Component {
+  static propTypes = {
+    labelOn: React.PropTypes.string,
+    labelOff: React.PropTypes.string
+  }
   constructor (props) {
     super(props)
     this.state = {

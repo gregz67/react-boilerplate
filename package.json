@@ -6,7 +6,8 @@
     "build": "webpack",
     "build:watch": "webpack --progress --colors --watch",
     "dev": "webpack-dev-server --progress --colors --hot --inline",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
